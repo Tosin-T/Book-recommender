@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ReactDOM } from 'react';
 import './App.css'
-import Logo from './components/Logo/Logo';
+// import Logo from './components/Logo/Logo';
 import Home from './Pages/Home';
 import Navbar from './components/Navbar/Navbar';
 // import Randomiser from './Pages/Randomiser';
@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Logo />
+        {/* <Logo /> */}
         <Navbar />
         <Saved />
         <Routes>
