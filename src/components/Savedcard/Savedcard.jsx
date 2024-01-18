@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 
-function Savedcard() {
-    return <div> hello </div>
-}
- export default Savedcard
+// function Savedcard() {
+//     return <div> hello </div>
+// }
+//  export default Savedcard

@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 
-function About() {
-    return <div> hello </div>
-}
- export default About
+// function About() {
+//     return <div> hello </div>
+// }
+//  export default About

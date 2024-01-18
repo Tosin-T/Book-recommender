@@ -1,0 +1,19 @@
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+  }
+
+  .bg-custom {
+    background:#75B9BE;
+  }
+
+
+.ms-1  {
+  color: black;
+  font-size: 1.6rem;
+}
+
+.nav-link i {
+  color: black; 
+  font-size: 1.4rem;
+}
+

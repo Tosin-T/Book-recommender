@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 
-function Timer() {
-    return <div> hello </div>
-}
- export default Timer
+// function Timer() {
+//     return <div> hello </div>
+// }
+//  export default Timer
