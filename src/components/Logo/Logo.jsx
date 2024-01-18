@@ -1,6 +1,6 @@
 import React from "react";
 
 function Logo() {
-    return <div> hello </div>
+    return <div>  </div>
 }
  export default Logo
