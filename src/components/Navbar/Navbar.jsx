@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './style.css';
 
 function Navbar() {
@@ -11,15 +11,16 @@ function Navbar() {
                         <a href="/" className="d-flex align-items-center pb-3 mb-md-5 me-md-auto text-black text-decoration-none" >
                             <span className="fs-1 d-none d-sm-inline">Menu</span>
                         </a>
-                        <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <ul className="nav nav-pills fixed-leftq
+                         flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li className="nav-item mb-5">
-                                <Link
+                                <NavLink
                                     to="/"
                                     
                                   
                                 >
                                     Home
-                                </Link>
+                                </NavLink>
                                 <a href="#"className="nav-link px-0" >
                                     <i className="bi-house" /> <span className="ms-1 d-none d-sm-inline"> </span>
 
@@ -30,12 +31,17 @@ function Navbar() {
                                 <a href="#" className="nav-link px-0">
                                     <i className="bi-search" /> <span className="ms-1 d-none d-sm-inline">Search</span>
                                 </a>
-                            </li>
-                            <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
-                                    <i className="bi-heart" /> <span className="ms-1 d-none d-sm-inline">Saved</span>
-                                </a>
-                            </li>
+                            </li>*/}
+                            <li className="nav-item mb-5 d-sm-inline">
+                                <i className="bi-heart" />
+                                <NavLink
+                                    to="saved"
+                                    className={({ isActive }) =>
+                                        isActive ? 'nav-link active' : 'nav-link'}>
+                                    Saved
+                                </NavLink>
+                                
+                            </li> {/*
                             <li className="nav-item mb-5">
                                 <a href="#" className="nav-link px-0">
                                     <i className="bi-clock" /> <span className="ms-1 d-none d-sm-inline">Timer</span>
