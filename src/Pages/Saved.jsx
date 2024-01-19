@@ -1,5 +1,5 @@
 import React from "react";
-import SavedCard from "../components/SavedCard/SavedCard";
+import SavedCard from "../components/Savedcard/Savedcard";
 
 
 function Saved() {
