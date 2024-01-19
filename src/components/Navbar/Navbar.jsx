@@ -13,39 +13,32 @@ function Navbar() {
                         </a>
                         <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li className="nav-item mb-5">
-                                <Link
-                                    to="/"
-                                    
-                                  
-                                >
-                                    Home
-                                </Link>
-                                <a href="#"className="nav-link px-0" >
-                                    <i className="bi-house" /> <span className="ms-1 d-none d-sm-inline"> </span>
+                                <a href="#" className="nav-link px-0" >
+                                    <i className="bi-house" /> <Link className="ms-1 d-none d-sm-inline homepage" to="/">Home</Link>
 
                                 </a>
                             </li>
-                             {/*
+
                             <li className="nav-item mb-5">
                                 <a href="#" className="nav-link px-0">
-                                    <i className="bi-search" /> <span className="ms-1 d-none d-sm-inline">Search</span>
+                                    <i className="bi-search" /> <Link className="ms-1 d-none d-sm-inline search" to="/search">Search</Link>
                                 </a>
                             </li>
                             <li className="nav-item mb-5">
                                 <a href="#" className="nav-link px-0">
-                                    <i className="bi-heart" /> <span className="ms-1 d-none d-sm-inline">Saved</span>
+                                    <i className="bi-heart" /> <Link className="ms-1 d-none d-sm-inline saved" to="/saved">Saved</Link>
                                 </a>
                             </li>
                             <li className="nav-item mb-5">
                                 <a href="#" className="nav-link px-0">
-                                    <i className="bi-clock" /> <span className="ms-1 d-none d-sm-inline">Timer</span>
+                                    <i className="bi-clock" /> <Link className="ms-1 d-none d-sm-inline timer" to="/timer" >Timer</Link>
                                 </a>
                             </li>
                             <li className="nav-item mb-5">
                                 <a href="#" className="nav-link px-0">
-                                    <i className="bi-question" /> <span className="ms-1 d-none d-sm-inline">Random</span>
+                                    <i className="bi-question" /> <Link className="ms-1 d-none d-sm-inline randomiser" to="/randomiser" >Random</Link>
                                 </a>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
                 </div>

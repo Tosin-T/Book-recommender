@@ -4,10 +4,10 @@ import './App.css'
 // import Logo from './components/Logo/Logo';
 import Home from './Pages/Home';
 import Navbar from './components/Navbar/Navbar';
-// import Randomiser from './Pages/Randomiser';
-// import Saved from './Pages/Saved';
-// import Timer from './Pages/Timer';
-// import Search from './Pages/Search';
+import Randomiser from './Pages/Randomiser';
+import Saved from './Pages/Saved';
+import Timer from './Pages/Timer';
+import Search from './Pages/Search';
 
 
 function App() {
@@ -19,10 +19,11 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-           {/* <Route path="/home" element={<Home />} /> */}
-            {/*<Route path="/randomiser" element={<Randomiser />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/randomiser" element={<Randomiser />} />
             <Route path="/saved" element={<Saved />} />
-            <Route path="/timer" element={<Timer />} /> */}
+            <Route path="/timer" element={<Timer />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
 
       </div>
@@ -32,4 +33,4 @@ function App() {
 
 }
 
-export default App
+export default App;
