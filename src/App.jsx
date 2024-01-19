@@ -14,20 +14,20 @@ import Saved from './Pages/Saved';
 function App() {
   return (
     <Router>
-      <div>
+      
         {/* <Logo /> */}
         <Navbar />
-        <Saved />
+        
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/saved" element={<Saved />} />
+          <Route path="saved" element={<Saved />} />
           {/* <Route path="/search" element={<Search />} />
             <Route path="/randomiser" element={<Randomiser />} />
             <Route path="/saved" element={<Saved />} />
             <Route path="/timer" element={<Timer />} /> */}
         </Routes>
 
-      </div>
+      
     </Router>
   )
 
