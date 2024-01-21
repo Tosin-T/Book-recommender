@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ReactDOM } from 'react';
-import './App.css'
+import './App.css';
+import Wrapper from './components/Wrapper/Wrapper';
 // import Logo from './components/Logo/Logo';
 import Home from './Pages/Home';
 import Navbar from './components/Navbar/Navbar';
@@ -14,24 +14,23 @@ import Saved from './Pages/Saved';
 function App() {
   return (
     <Router>
-      
-        {/* <Logo /> */}
+      <Wrapper> 
         <Navbar />
-        
+         
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="saved" element={<Saved />} />
-          {/* <Route path="/search" element={<Search />} />
-            <Route path="/randomiser" element={<Randomiser />} />
-            <Route path="/saved" element={<Saved />} />
-            <Route path="/timer" element={<Timer />} /> */}
+            {/* <Logo /> */}  
+            <Route path="/" element={<Home />} />
+            <Route path="saved" element={<Saved />} />
+            {/* <Route path="/search" element={<Search />} />
+              <Route path="/randomiser" element={<Randomiser />} />
+              <Route path="/timer" element={<Timer />} /> */}
         </Routes>
-
-      
+            
+      </Wrapper>  
     </Router>
   )
 
 
 }
 
-export default App
+export default App;
