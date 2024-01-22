@@ -13,31 +13,31 @@ function Navbar() {
                         </a>
                         <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0" >
-                                    <i className="bi-house" /> <Link className="ms-1 d-none d-sm-inline homepage" to="/">Home</Link>
+                                <div href="#" className="nav-link px-0" >
+                                    <i className="bi-house" /> <Link className="ms-1 d-none d-sm-inline home" to="/">Home</Link>
 
-                                </a>
+                                </div>
                             </li>
 
                             <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
+                                <div href="#" className="nav-link px-0">
                                     <i className="bi-search" /> <Link className="ms-1 d-none d-sm-inline search" to="/search">Search</Link>
-                                </a>
+                                </div>
                             </li>
                             <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
+                                <div href="#" className="nav-link px-0">
                                     <i className="bi-heart" /> <Link className="ms-1 d-none d-sm-inline saved" to="/saved">Saved</Link>
-                                </a>
+                                </div>
                             </li>
                             <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
+                                <div href="#" className="nav-link px-0">
                                     <i className="bi-clock" /> <Link className="ms-1 d-none d-sm-inline timer" to="/timer" >Timer</Link>
-                                </a>
+                                </div>
                             </li>
                             <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
+                                <div href="#" className="nav-link px-0">
                                     <i className="bi-question" /> <Link className="ms-1 d-none d-sm-inline randomiser" to="/randomiser" >Random</Link>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Timer = () =>{
     return (
         
-            <p>timer </p>
+            <h1 className="webpages" >This is the timer page</h1>
         
         
     )
