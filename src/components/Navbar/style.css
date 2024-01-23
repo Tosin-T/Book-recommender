@@ -10,6 +10,8 @@ nav.navbar.navbar-default {
 .ms-1  {
   color: black;
   font-size: 1.6rem;
+  text-decoration: none;
+
 }
 
 .nav-link i {
@@ -17,3 +19,9 @@ nav.navbar.navbar-default {
   font-size: 1.4rem;
 }
 
+.title {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
