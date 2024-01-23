@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './style.css';
 
 function Navbar() {
@@ -11,7 +11,8 @@ function Navbar() {
                         <a href="/" className="d-flex align-items-center pb-3 mb-md-5 me-md-auto text-black text-decoration-none" >
                             <span className="fs-1 d-none d-sm-inline">Menu</span>
                         </a>
-                        <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <ul className="nav nav-pills fixed-leftq
+                         flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li className="nav-item mb-5">
                                 <div href="#" className="nav-link px-0" >
                                     <i className="bi-house" /> <Link className="ms-1 d-none d-sm-inline home" to="/">Home</Link>

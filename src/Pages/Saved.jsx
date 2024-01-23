@@ -1,12 +1,17 @@
 import React from "react";
+import SavedCard from "../components/Savedcard/Savedcard";
 
-const saved = () =>{
+
+function Saved() {
     return (
-        
-            <h1 className="webpages" >This is the saved page</h1>
-        
-        
+        <div className='saved-books-conteiner container-fluid'>
+            <h1>Your saved books</h1>
+            <div className="conteiner-fluid d-md-flex justify-content-center">
+                <SavedCard />
+            </div>
+            
+        </div>
     )
 }
 
-export default saved;
+export default Saved;
