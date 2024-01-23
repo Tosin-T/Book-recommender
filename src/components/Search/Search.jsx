@@ -1,17 +1,19 @@
 import React from "react";
 import axios from "axios";
+import SearchResults from "../SearchResults/SearchResults";
 
 
 //api call to show book recommendations
 const searchBooks = (genre) => {
     
-    const apikey = "f24169ebe84142998e6f4ebd20e10f31"
+    const apikey = "13c48b7534974e2cb41485d0c4dfc9a5"
     const apiurl = "https://api.bigbookapi.com/search-books?api-key=" + apikey + "&query=" + genre;
     
     axios.get(apiurl)
         .then(response => {
            response.data.books.forEach(book => {
-            console.log(book[0].title + ' ' + book[0].image)
+            // console.log(book[0].title + ' ' + book[0].image)
+            <SearchResults />
            })
         })
 }
@@ -28,8 +30,9 @@ function Search() {
     //for every genre in the array a button is created
     return (
         <div>
+            <h1 className="text-right">What are you in the mood for?</h1>
             {genres.map((genre) => (
-                <button id={genre} onClick={() => searchBooks(genre)} >
+                <button className="btn btn-outline-dark m-1" id={genre} onClick={() => searchBooks(genre)} >
                 {formatGenre(genre)}
                 </button>
             ))}
