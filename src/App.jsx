@@ -7,12 +7,12 @@ import Home from './Pages/Home';
 // import Randomiser from './Pages/Randomiser';
 // import Saved from './Pages/Saved';
 // import Timer from './Pages/Timer';
-import Search from './Pages/Search';
+import SearchPage from './Pages/SearchPage';
 
 
 function App() {
   return (
-    <Search />
+    <SearchPage />
     // <Router>
     //   <div>
     //     {/* <Logo /> */}
