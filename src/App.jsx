@@ -16,9 +16,8 @@ function App() {
     <Router>
       <Wrapper> 
         <Navbar />
-         
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/randomiser" element={<Randomiser />} />
             <Route path="/saved" element={<Saved />} />
