@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 function Navbar() {
@@ -14,44 +14,32 @@ function Navbar() {
                         <ul className="nav nav-pills fixed-leftq
                          flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li className="nav-item mb-5">
-                                <NavLink
-                                    to="/"
-                                    
-                                  
-                                >
-                                    Home
-                                </NavLink>
-                                <a href="#"className="nav-link px-0" >
-                                    <i className="bi-house" /> <span className="ms-1 d-none d-sm-inline"> </span>
+                                <div href="#" className="nav-link px-0" >
+                                    <i className="bi-house" /> <Link className="ms-1 d-none d-sm-inline home" to="/">Home</Link>
 
-                                </a>
+                                </div>
                             </li>
-                             {/*
+
                             <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
-                                    <i className="bi-search" /> <span className="ms-1 d-none d-sm-inline">Search</span>
-                                </a>
-                            </li>*/}
-                            <li className="nav-item mb-5 d-sm-inline">
-                                <i className="bi-heart" />
-                                <NavLink
-                                    to="saved"
-                                    className={({ isActive }) =>
-                                        isActive ? 'nav-link active' : 'nav-link'}>
-                                    Saved
-                                </NavLink>
-                                
-                            </li> {/*
-                            <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
-                                    <i className="bi-clock" /> <span className="ms-1 d-none d-sm-inline">Timer</span>
-                                </a>
+                                <div href="#" className="nav-link px-0">
+                                    <i className="bi-search" /> <Link className="ms-1 d-none d-sm-inline search" to="/search">Search</Link>
+                                </div>
                             </li>
                             <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
-                                    <i className="bi-question" /> <span className="ms-1 d-none d-sm-inline">Random</span>
-                                </a>
-                            </li> */}
+                                <div href="#" className="nav-link px-0">
+                                    <i className="bi-heart" /> <Link className="ms-1 d-none d-sm-inline saved" to="/saved">Saved</Link>
+                                </div>
+                            </li>
+                            <li className="nav-item mb-5">
+                                <div href="#" className="nav-link px-0">
+                                    <i className="bi-clock" /> <Link className="ms-1 d-none d-sm-inline timer" to="/timer" >Timer</Link>
+                                </div>
+                            </li>
+                            <li className="nav-item mb-5">
+                                <div href="#" className="nav-link px-0">
+                                    <i className="bi-question" /> <Link className="ms-1 d-none d-sm-inline randomiser" to="/randomiser" >Random</Link>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
