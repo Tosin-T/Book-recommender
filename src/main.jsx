@@ -4,6 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as bootstrap from 'bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
