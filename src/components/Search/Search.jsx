@@ -30,7 +30,7 @@ function Search() {
         <div>
             <h1 className="text-right">What are you in the mood for?</h1>
             {genres.map((genre) => (
-                <button className="btn btn-outline-dark m-1" id={genre} onClick={() => searchBooks(genre)} >
+                <button className="btn btn-outline-dark m-1" key={genre} onClick={() => searchBooks(genre)} >
                 {formatGenre(genre)}
                 </button>
             ))}
