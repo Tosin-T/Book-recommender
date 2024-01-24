@@ -2,6 +2,15 @@ import React from "react";
 import './style.css';
 
 function SearchResults({ books }) {
+    function onSave(book) {
+    const savedBooks = JSON.parse(localStorage.getItem('books')) || [];
+    if (!savedBooks.find(b => b.id === book.id)) {
+      savedBooks.push(books);
+      localStorage.setItem('books', JSON.stringify(savedBooks));
+    };
+    
+  };
+
     return (
         <div>
             {books.map((book, index) => (
@@ -19,4 +28,4 @@ function SearchResults({ books }) {
     )
 }
 
-export default SearchResults
+export default SearchResults;

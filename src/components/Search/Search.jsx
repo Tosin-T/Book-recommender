@@ -16,7 +16,7 @@ function Search() {
             .then(response => {
                 setBooks(response.data.books);
                })
-            
+           
     }
     const genres = ['action', 'adventure', 'anthropology', 'astronomy', 'archaeology', 'architecture', 'art', 'aviation', 'biography', 'biology', 'business', 'chemistry', 'children', 'classics', 'contemporary', 'cookbook', 'crafts', 'crime', 'dystopia', 'economics', 'education', 'engineering', 'environment', 'erotica', 'essay', 'fairy_tales', 'fantasy', 'fashion', 'feminism', 'fiction', 'finance', 'folklore', 'food', 'gaming', 'gardening', 'geography', 'geology', 'graphic_novel', 'health', 'historical', 'historical_fiction', 'history', 'horror', 'how_to', 'humor', 'inspirational', 'journalism', 'law', 'literary_fiction', 'literature', 'magical_realism', 'manga', 'martial_arts', 'mathematics', 'medicine', 'medieval', 'memoir', 'mystery', 'mythology', 'nature', 'nonfiction', 'novel', 'occult', 'paranormal', 'parenting', 'philosophy', 'physics', 'picture_book', 'poetry', 'politics', 'programming', 'psychology', 'reference', 'relationships', 'religion', 'romance', 'science_and_technology', 'science_fiction', 'self_help', 'short_stories', 'society', 'sociology', 'space', 'spirituality', 'sports', 'text_book', 'thriller', 'travel', 'true_crime', 'war', 'writing', 'young_adult'];
 
@@ -30,7 +30,7 @@ function Search() {
         <div>
             <h1 className="text-right">What are you in the mood for?</h1>
             {genres.map((genre) => (
-                <button className="btn btn-outline-dark m-1" id={genre} onClick={() => searchBooks(genre)} >
+                <button className="btn btn-outline-dark m-1" key={genre} onClick={() => searchBooks(genre)} >
                 {formatGenre(genre)}
                 </button>
             ))}
