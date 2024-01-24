@@ -8,7 +8,7 @@ function SearchResults({ books }) {
       savedBooks.push(books);
       localStorage.setItem('books', JSON.stringify(savedBooks));
     };
-    
+        console.log(savedBooks);
   };
 
     return (
