@@ -16,7 +16,7 @@ nav.navbar.navbar-default {
 
 .nav-link i {
   color: black; 
-  font-size: 1.4rem;
+  font-size: 35px;
 }
 
 .title {
@@ -25,3 +25,13 @@ nav.navbar.navbar-default {
   left: 0;
   right: 0;
 }
+
+h1 {
+  padding-top: 3rem;
+  padding-left: 9rem;
+}
+
+/* .about-card {
+  padding-left: 30rem;
+} */
+
