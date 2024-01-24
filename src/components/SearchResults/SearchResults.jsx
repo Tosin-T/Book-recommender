@@ -5,7 +5,7 @@ function SearchResults({ books }) {
     function onSave(book) {
     const savedBooks = JSON.parse(localStorage.getItem('books')) || [];
     if (!savedBooks.find(b => b.id === book.id)) {
-      savedBooks.push(books);
+      savedBooks.push(book);
       localStorage.setItem('books', JSON.stringify(savedBooks));
     };
         console.log(savedBooks);
