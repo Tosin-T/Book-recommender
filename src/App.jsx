@@ -4,7 +4,6 @@ import './App.css';
 import Wrapper from './components/Wrapper/Wrapper';
 import Logo from './components/Logo/Logo';
 import Home from './Pages/Home';
-
 import SearchPage from './Pages/SearchPage';
 import Navbar from './components/Navbar/Navbar';
 import Randomiser from './Pages/Randomiser';
@@ -19,7 +18,7 @@ function App() {
     <Router>
       <Wrapper> 
         <Navbar />
-        <Routes>
+        <Routes className='pages'>
           <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/randomiser" element={<Randomiser />} />
@@ -27,7 +26,6 @@ function App() {
             <Route path="/timer" element={<Timer />} />
           <Route path="/search" element={<SearchPage />} />
         </Routes>
-            
       </Wrapper>  
     </Router>
   )
