@@ -34,8 +34,8 @@ function Search() {
                 {formatGenre(genre)}
                 </button>
             ))}
-             <SearchResults books={books} /> {/* Pass the books state as a prop to SearchResults */}
+            {books.length === 0 ? <div>No books have been fetched!</div> :  <SearchResults books={books} />} {/* Pass the books state as a prop to SearchResults */}
         </div>
     )
 }
- export default Search
+export default Search;

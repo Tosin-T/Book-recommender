@@ -2,6 +2,22 @@ import React from "react";
 import './style.css';
 
 function SearchResults({ books }) {
+
+    function onSave(book) {
+        const savedBooks = JSON.parse(localStorage.getItem('books')) || [];
+        
+        const isThisSaved = savedBooks.some(savedBook => savedBook.id === book[0].id)
+
+
+    if (!isThisSaved) {
+      savedBooks.push(book[0]);
+            localStorage.setItem('books', JSON.stringify(savedBooks));
+            console.log(savedBooks)
+        }else {
+            console.log("this book exists")
+    }
+  };
+
     return (
         <div>
             <div className="carousel slide h-100 d-flex align-items-center justify-content-center m-5" id="bookCarousel">
@@ -24,9 +40,8 @@ function SearchResults({ books }) {
                     <span className="sr-only">Next</span>
                 </a>
             </div>
-            <div id="whiteSpace"></div>
         </div>
     )
 }
 
-export default SearchResults
+export default SearchResults;
