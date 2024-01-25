@@ -1,0 +1,21 @@
+.logo-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.logo-container.slide-in {
+    opacity: 1;
+}
+
+.logo {
+    width: 200px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Additional styling as needed */
