@@ -20,7 +20,7 @@ function SearchResults({ books }) {
 
     return (
         <div>
-            <div className="carousel slide h-100 d-flex align-items-center justify-content-center m-5" id="bookCarousel">
+            <div ref={resultsRef} className="carousel slide h-100 d-flex align-items-center justify-content-center m-5" id="bookCarousel">
                 <div className="carousel-inner" style={{ width: '400px'}}>
                     {books.map((book, index) =>( 
                         <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} >

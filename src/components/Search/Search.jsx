@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import SearchResults from "../SearchResults/SearchResults";
 
@@ -6,6 +6,8 @@ import SearchResults from "../SearchResults/SearchResults";
 //search for books depending on the button clicked
 function Search() {
     const [books, setBooks] = useState([]);
+    const resultsRef = useRef(null);
+
     const searchBooks = (genre) => {
     
         //api call to get book recommendations
@@ -15,6 +17,10 @@ function Search() {
         axios.get(apiurl)
             .then(response => {
                 setBooks(response.data.books);
+                // Scroll to results after state update
+                if (resultsRef.current) {
+                    resultsRef.current.scrollIntoView({ behavior: 'smooth' });
+                }
             })
             
     }
@@ -34,7 +40,7 @@ function Search() {
                 {formatGenre(genre)}
                 </button>
             ))}
-            {books.length === 0 ? <div>No books have been fetched!</div> :  <SearchResults books={books} />} {/* Pass the books state as a prop to SearchResults */}
+            {books.length === 0 ? <div>No books have been fetched!</div> :  <SearchResults resultsRef={resultsRef} books={books} />} {/* Pass the books state as a prop to SearchResults */}
         </div>
     )
 }
