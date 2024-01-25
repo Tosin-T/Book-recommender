@@ -1,43 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css';
+import Cards from "./Cards";
+
 function About() {
+
+    const randomArr = [
+        {
+            icon: "bi bi-book-fill",
+            feature: "1",
+            title: "Book Finder",
+            description: 'cool things happening over here'
+        },
+        {
+            icon: "bi bi-bookmarks-fill",
+            feature: "2",
+            title: "Bookmark",
+            description: 'cool things happening over here'
+        },
+        {
+            icon: "bi bi-hourglass-split",
+            feature: "3",
+            title: "Tracker",
+            description: 'cool things happening over here'
+        },
+        {
+            icon: "bi bi-question-square-fill",
+            feature: "4",
+            title: "Randomiser",
+            description: 'cool things happening over here'
+        }
+    ]
+
+    const [list, Setlist] = useState(randomArr)
+
+
     return (
+
         <>
-            <div className="row1">
-                <div className="about-card  p-5 rounded-3 m-5" style={{ width: '18rem' }}>
-                    <img src="\src\assets\images\book-icon.png" className="icon" style={{ width: '4rem' }} alt="icon" />
-                    <div className="card-body">
-                        <h5 className="card-title m-3">1</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div className="about-card p-5  rounded-3 m-5" style={{ width: '18rem' }}>
-                <a target="_blank" href="https://icons8.com/icon/12773/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                    <img src="src\assets\images\bookmark-icon.png" className="icon" style={{ width: '4rem' }} alt="icon" />
-                    <div className="card-body">
-                        <h5 className="card-title m-3">2</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
+            <div className="row1"> {
+                [list[0], list[1]].map(
+                    feature => (
+                        <Cards {...feature} />
+                    )
+                )}
             </div>
-            <div className="row2">
-                <div className="about-card  p-5 rounded-3 m-5" style={{ width: '18rem' }}>
-                    <img src="src\assets\images\timer-icon.png" className="icon" style={{ width: '4rem' }} alt="icon" />
-                    <div className="card-body">
-                        <h5 className="card-title m-3">3</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div className="about-card p-5  rounded-3 m-5" style={{ width: '18rem' }}>
-                    <img src="src\assets\images\search-icon.png" className="icon" style={{ width: '4rem' }} alt="icon" />
-                    <div className="card-body">
-                        <h5 className="card-title m-3">4</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
+            <div className="row2"> {
+                [list[2], list[3]].map(
+                    feature => (
+                        <Cards {...feature} />
+                    )
+                )}
             </div>
         </>
 
     );
 }
+
 export default About;
+
