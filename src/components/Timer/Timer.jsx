@@ -4,7 +4,7 @@ import { useIdleTimer } from 'react-idle-timer'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
-import './style.css'
+import '/style.css'
 
 const TimerFunction = () => {
   const [isTimerRunning, setTimerRunning] = useState(false);
