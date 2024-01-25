@@ -2,32 +2,31 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Wrapper from './components/Wrapper/Wrapper';
-import Logo from './components/Logo/Logo';
+import Aboutpage from './Pages/Aboutpage';
 import SearchPage from './Pages/SearchPage';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/footer';
-import Randomiser from './Pages/Randomiser';
 import Saved from './Pages/Saved';
-import Timer from './Pages/Timer';
-import Homepage from './Pages/Homepage/Homepage';
+import TimerPage from './Pages/Timer';
+import HomePage from './Pages/HomePage/Homepage';
+
 
 
 
 function App() {
   return (
     <Router>
-      <Wrapper> 
+      <Wrapper>
         <Navbar />
         <Routes className='pages'>
-          <Route path="*" element={<Homepage />} />
-          <Route path="/home" element={<Homepage />} />
-          <Route path="/randomiser" element={<Randomiser />} />
-            <Route path="/saved" element={<Saved />} />
-            <Route path="/timer" element={<Timer />} />
+          <Route path="*" element={<HomePage />} />
+          <Route path="/saved" element={<Saved />} />
+          <Route path="/timer" element={<TimerPage />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/aboutpage" element={<Aboutpage />} />
         </Routes>
-      </Wrapper>  
-      <Footer/>
+      </Wrapper>
+      <Footer />
     </Router>
   )
 
