@@ -4,13 +4,14 @@ import './App.css';
 import Wrapper from './components/Wrapper/Wrapper';
 import Logo from './components/Logo/Logo';
 import Home from './Pages/Home';
+
 import SearchPage from './Pages/SearchPage';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/footer';
 import Randomiser from './Pages/Randomiser';
 import Saved from './Pages/Saved';
 import Timer from './Pages/Timer';
-
+import Homepage from './Pages/Homepage/Homepage';
 
 
 
