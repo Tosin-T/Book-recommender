@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/footer';
 import Saved from './Pages/Saved';
 import TimerPage from './Pages/Timer';
+import HomePage from './Pages/HomePage/Homepage';
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <Wrapper>
         <Navbar />
         <Routes className='pages'>
-          <Route path="*" element={<Homepage />} />
+          <Route path="*" element={<HomePage />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/timer" element={<TimerPage />} />
           <Route path="/search" element={<SearchPage />} />
