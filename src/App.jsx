@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Wrapper from './components/Wrapper/Wrapper';
 import Logo from './components/Logo/Logo';
-import About from './Pages/Aboutpage';
+import Home from './Pages/Home';
 
 import SearchPage from './Pages/SearchPage';
 import Navbar from './components/Navbar/Navbar';
@@ -20,15 +20,14 @@ function App() {
     <Router>
       <Wrapper> 
         <Navbar />
-        <Routes>
-          <Route path="*" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
+        <Routes className='pages'>
+          <Route path="*" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/randomiser" element={<Randomiser />} />
             <Route path="/saved" element={<Saved />} />
             <Route path="/timer" element={<Timer />} />
           <Route path="/search" element={<SearchPage />} />
         </Routes>
-            
       </Wrapper>  
       <Footer/>
     </Router>
