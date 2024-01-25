@@ -6,6 +6,7 @@ import Logo from './components/Logo/Logo';
 import Home from './Pages/Home';
 import SearchPage from './Pages/SearchPage';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/footer';
 import Randomiser from './Pages/Randomiser';
 import Saved from './Pages/Saved';
 import Timer from './Pages/Timer';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/search" element={<SearchPage />} />
         </Routes>
       </Wrapper>  
+      <Footer/>
     </Router>
   )
 
