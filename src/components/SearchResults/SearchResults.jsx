@@ -24,6 +24,7 @@ function SearchResults({ books }) {
                     <span className="sr-only">Next</span>
                 </a>
             </div>
+            <div id="whiteSpace"></div>
         </div>
     )
 }
