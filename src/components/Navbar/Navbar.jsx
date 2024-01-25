@@ -21,37 +21,6 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item mb-5">
-<<<<<<< HEAD
-                                <a href="#" className="nav-link px-0">
-                                    <i className="bi-search" /> <span className="ms-1 d-none d-sm-inline">Search</span>
-                                </a>
-                            </li>*/}
-                            <li className="nav-item mb-5 d-sm-inline">
-                                <i className="bi-heart" />
-                                <NavLink
-                                    to="saved"
-                                    className={({ isActive }) =>
-                                        isActive ? 'nav-link active' : 'nav-link'}>
-                                    Saved
-                                </NavLink>
-                                
-                            </li> 
-                            <li className="nav-item mb-5 d-sm-inline">
-                                <i className="bi-heart" />
-                                <NavLink
-                                    to="Timer"
-                                    className={({ isActive }) =>
-                                        isActive ? 'nav-link active' : 'nav-link'}>
-                                    Timer
-                                </NavLink>
-                                
-                            </li> 
-                            {/* <li className="nav-item mb-5">
-                                <a href="#" className="nav-link px-0">
-                                    <i className="bi-question" /> <span className="ms-1 d-none d-sm-inline">Random</span>
-                                </a>
-                            </li> */}
-=======
                                 <div href="#" className="nav-link px-0">
                                     <i className="bi-search" /> <Link className="ms-1 d-none d-sm-inline search" to="/search">Search</Link>
                                 </div>
@@ -71,7 +40,6 @@ function Navbar() {
                                     <i className="bi-question" /> <Link className="ms-1 d-none d-sm-inline randomiser" to="/randomiser" >Random</Link>
                                 </div>
                             </li>
->>>>>>> f43673d591c5242ffc7a48c2ec1c824024360d49
                         </ul>
                     </div>
                 </div>
