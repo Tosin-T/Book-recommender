@@ -10,7 +10,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/footer';
 import Randomiser from './Pages/Randomiser';
 import Saved from './Pages/Saved';
-import TimerPage from './Pages/TimerPage';
+import Timer from './Pages/Timer';
 
 
 
@@ -25,7 +25,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/randomiser" element={<Randomiser />} />
             <Route path="/saved" element={<Saved />} />
-            <Route path="/timer" element={<TimerPage />} />
+            <Route path="/timer" element={<Timer />} />
           <Route path="/search" element={<SearchPage />} />
         </Routes>
             
