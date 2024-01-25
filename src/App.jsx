@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Wrapper from './components/Wrapper/Wrapper';
 import Logo from './components/Logo/Logo';
-import Home from './Pages/Home';
-
 import SearchPage from './Pages/SearchPage';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/footer';
@@ -21,8 +19,8 @@ function App() {
       <Wrapper> 
         <Navbar />
         <Routes className='pages'>
-          <Route path="*" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="*" element={<Homepage />} />
+          <Route path="/home" element={<Homepage />} />
           <Route path="/randomiser" element={<Randomiser />} />
             <Route path="/saved" element={<Saved />} />
             <Route path="/timer" element={<Timer />} />
