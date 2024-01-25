@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Wrapper from './components/Wrapper/Wrapper';
 import Logo from './components/Logo/Logo';
-import Home from './Pages/Home';
+import About from './Pages/Aboutpage';
 
 import SearchPage from './Pages/SearchPage';
 import Navbar from './components/Navbar/Navbar';
@@ -11,7 +11,7 @@ import Footer from './components/Footer/footer';
 import Randomiser from './Pages/Randomiser';
 import Saved from './Pages/Saved';
 import Timer from './Pages/Timer';
-
+import Homepage from './Pages/Homepage/Homepage';
 
 
 
@@ -21,8 +21,8 @@ function App() {
       <Wrapper> 
         <Navbar />
         <Routes>
-          <Route path="*" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="*" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
           <Route path="/randomiser" element={<Randomiser />} />
             <Route path="/saved" element={<Saved />} />
             <Route path="/timer" element={<Timer />} />
