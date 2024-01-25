@@ -2,9 +2,9 @@ import { Button } from 'bootstrap'
 import { useEffect, useState } from 'react'
 import { useIdleTimer } from 'react-idle-timer'
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
-import '/style.css'
+import './style.css'
 // test
 const TimerFunction = () => {
   const [isTimerRunning, setTimerRunning] = useState(false);
