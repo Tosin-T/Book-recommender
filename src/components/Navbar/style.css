@@ -35,3 +35,7 @@ h1 {
   padding-left: 30rem;
 } */
 
+.logo-img {
+  max-width: 150px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
