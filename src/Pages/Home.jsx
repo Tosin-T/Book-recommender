@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className='about-container container-fluid'>
         <h1>What to expect from our site:</h1>
-        <div className="container-fluid d-md-flex justify-content-center">
+        <div className=" container-fluid d-md-flex justify-content-center" style={{paddingLeft: '10rem'}}>
             <About />
         </div>
         
