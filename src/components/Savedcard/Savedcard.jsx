@@ -1,6 +1,5 @@
 import React from "react";
 import './style.css';
-
 function SavedCard(props) {
     return (
       <div className="saved-card p-5 rounded-3 m-5">
@@ -13,5 +12,4 @@ function SavedCard(props) {
       </div>
     );
 }
-
 export default SavedCard;
