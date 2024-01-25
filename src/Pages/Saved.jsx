@@ -1,6 +1,5 @@
 import React from "react";
 import SavedCard from "../components/Savedcard/Savedcard";
-import { useState } from "react";
 
 
 function Saved() {
