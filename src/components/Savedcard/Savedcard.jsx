@@ -1,5 +1,6 @@
 import React from "react";
-import './style.css';
+import '.style.css';
+
 function SavedCard(props) {
     return (
       <div className="saved-card p-5 rounded-3 m-5">
