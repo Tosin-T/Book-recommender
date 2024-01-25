@@ -27,6 +27,7 @@ function Navbar() {
                                 <Link to="/saved" className="nav-link px-0">
                                     <i className="bi bi-heart-fill" /> <Link className="ms-1 d-none d-sm-inline saved" to="/saved">Saved</Link>
                                 </Link>
+                                
                             </li>
                             <li className="nav-item mb-3">
                                 <Link to="/timer" className="nav-link px-0">
