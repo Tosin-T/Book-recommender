@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import axios from "axios";
 import SearchResults from "../SearchResults/SearchResults";
 import { Dropdown } from 'react-bootstrap';
-
+import './style.css'
 
 //search for books depending on the button clicked
 function Search() {
@@ -12,7 +12,7 @@ function Search() {
     const searchBooks = (genre) => {
     
         //api call to get book recommendations
-        const apikey = "13c48b7534974e2cb41485d0c4dfc9a5"
+        const apikey = "9af57a0d28d6438294906888e46d5c65"
         const apiurl = "https://api.bigbookapi.com/search-books?api-key=" + apikey + "&query=" + genre;
         
         axios.get(apiurl)
@@ -39,7 +39,7 @@ function Search() {
                 {/* Buttons for large screens */}
                 <div className="row d-none d-md-flex flex-wrap">
                     {genres.map((genre) => (
-                        <button className="btn btn-outline-dark m-1 col" style={{ whiteSpace: 'nowrap'}} key={genre}    onClick={() => searchBooks(genre)} >
+                        <button className="btn m-1 col" style={{ whiteSpace: 'nowrap', borderRadius: '0px', boxShadow: '5px 5px #75B9BE', borderColor: 'black'}} key={genre}    onClick={() => searchBooks(genre)} >
                             {formatGenre(genre)}
                         </button>
                     ))}
