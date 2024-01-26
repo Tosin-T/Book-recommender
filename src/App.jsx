@@ -18,12 +18,12 @@ function App() {
     <Router>
       <Wrapper>
         <Navbar />
-        <Routes className='pages'>
-          <Route path="*" element={<HomePage />} />
-          <Route path="/saved" element={<Saved />} />
-          <Route path="/timer" element={<TimerPage />} />
-          <Route path="/search" element={<SearchPage />} />
-          <Route path="/aboutpage" element={<Aboutpage />} />
+        <Routes>
+          <Route className="page" path="*" element={<HomePage />} />
+          <Route className="page" path="/saved" element={<Saved />} />
+          <Route className="page" path="/timer" element={<TimerPage />} />
+          <Route className="page" path="/search" element={<SearchPage />} />
+          <Route className="page" path="/aboutpage" element={<Aboutpage />} />
         </Routes>
       </Wrapper>
       <Footer />
