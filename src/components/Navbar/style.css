@@ -1,6 +1,4 @@
-nav.navbar.navbar-default {
-    margin-bottom: 0;
-  }
+
 
   .bg-custom {
     background:#75B9BE;
@@ -26,16 +24,8 @@ nav.navbar.navbar-default {
   right: 0;
 }
 
-h1 {
-  padding-top: 3rem;
-  padding-left: 9rem;
-}
-
-/* .about-card {
-  padding-left: 30rem;
-} */
-
 .logo-img {
-  max-width: 150px; /* Adjust the maximum width as needed */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 150px; 
+  height: auto; 
 }
+
