@@ -14,8 +14,17 @@
     color: #333;
     font-size: 15vh;
   }
-  .timer-button {
-    background-color: #007BFF;
+  .timer-button-stop {
+    background-color:#e35b58;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .timer-button-start{
+    background-color:#75B9BE;
     color: #fff;
     padding: 10px 20px;
     margin: 10px;
@@ -26,5 +35,10 @@
   .countdown {
     font-size: 20vh;
     margin-top: 10px;
-    color: #007BFF;
+    color: #e35b58
+  }
+  p{
+    color: #333;
+    font-size: 2vh;
+    font-weight: 600;
   }

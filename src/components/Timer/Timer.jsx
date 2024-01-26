@@ -2,21 +2,19 @@ import { Button } from 'bootstrap'
 import { useEffect, useState } from 'react'
 import { useIdleTimer } from 'react-idle-timer'
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
 import './style.css'
 const TimerFunction = () => {
     const [isTimerRunning, setTimerRunning] = useState(false);
-    const [customTimeMinutes, setCustomTimeMinutes] = useState(5); // Default custom time is 5 minutes
-    const [state, setState] = useState("It seems like you got distracted- lets take a 5 seconds and go again")
+    const [customTimeMinutes, setCustomTimeMinutes] = useState(10); 
+    const [state, setState] = useState(null)
     const [count, setCount] = useState(0)
-    const [remaining, setRemaining] = useState(0)
     const handleStart = () => {
         setTimerRunning(true);
     };
     const handleFinish = () => {
         setTimerRunning(false);
-        // You can perform any action when the timer finishes
+        
         console.log('Timer finished!');
     };
     const handleCustomTimeChange = (event) => {
@@ -24,10 +22,10 @@ const TimerFunction = () => {
 
     };
     const onIdle = () => {
-        setState("Keep up the good work you're on your way to reaching your reading Goal")
+        setState("Keep up the good work you're on your way to reaching your reading goal :)")
     }
     const onActive = () => {
-        setState("It seems like you got distracted- lets take a 5 seconds and go again")
+        setState("It seems like you got distracted, lets take a few seconds and go again !")
     }
     const onAction = () => {
         setCount(count + 1)
@@ -36,25 +34,17 @@ const TimerFunction = () => {
         onIdle,
         onActive,
         onAction,
-        timeout: 5_000,
-    })
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setRemaining(Math.ceil(getRemainingTime() / 1000))
-        }, 500)
-        return () => {
-            clearInterval(interval)
-        }
+        timeout: 1_000,
     })
 
     return (
         <div className="timer-container, mom">
             <h2 className="timer-title">Reading Timer</h2>
-            <button onClick={handleStart} disabled={isTimerRunning} className="timer-button">
+            <button onClick={handleStart} disabled={isTimerRunning} className="timer-button-start">
                 Start
             </button>
-            <button onClick={handleFinish} disabled={!isTimerRunning} className="timer-button">
-                Finish
+            <button onClick={handleFinish} disabled={!isTimerRunning} className="timer-button-stop">
+                Stop
             </button>
             <div className="custom-time-container">
                 <input
@@ -63,14 +53,16 @@ const TimerFunction = () => {
                     onChange={handleCustomTimeChange}
                     placeholder="Custom Time (minutes)"
                 />
+                <br></br>
+
                 <p>{state}</p>
-                <p>lets count you in {remaining}</p>
+                
             </div>
             {isTimerRunning && (
                 <Countdown
-                    date={Date.now() + customTimeMinutes * 60 * 1000} // Convert minutes to milliseconds
+                    date={Date.now() + customTimeMinutes * 60 * 1000}
                     onComplete={handleFinish}
-                    renderer={({ minutes, seconds, completed, }) => (
+                    renderer={({ minutes, seconds, }) => (
                         <div className="countdown">{`${minutes}:${seconds}`}</div>
                     )}
                 />

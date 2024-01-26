@@ -7,9 +7,9 @@
   text-align: center;
 }
 
-.page {
+.saved-books-conteiner {
   width: 80%;
-  margin: 30px;
+  margin-bottom: 200px;
 }
 
 .logo {
@@ -32,3 +32,5 @@
 .read-the-docs {
   color: #888;
 }
+
+
