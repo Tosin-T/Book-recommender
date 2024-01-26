@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className={`logo-container ${showLogo ? "slide-in" : ""}`}>
-        <img src="src\assets\images\text-logo.png" alt="Logo" className="logo" />
+        <img src="src\assets\images\home-logo.png" alt="Logo" className="logo" />
       </div>
     </div>
   );
