@@ -14,9 +14,9 @@ function SavedCard(props) {
     <div className="saved-card p-3 rounded-3 m-3 d-flex">
       <img src={props.book.image} className="card-img-top imag-fluid h-auto" style={{ width: '200px' }} alt="Book cover" />
       <div className="card-body align-middle">
-        <h5 className="card-title m-2 h-50">{props.book.title}</h5>
+        <h5 className="card-title ms-3 h-50">{props.book.title}</h5>
         <p className="card-text"></p>
-        <button className="btn mt-2" style={{ background: '#75B9BE' }} onClick={deleteBook}>Remove</button>
+        <button className="btn mt-2 ms-3" style={{ background: '#75B9BE' }} onClick={deleteBook}>Remove</button>
       </div>
     </div>
   );
