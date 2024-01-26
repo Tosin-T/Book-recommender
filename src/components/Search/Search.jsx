@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import SearchResults from "../SearchResults/SearchResults";
 
@@ -6,6 +6,8 @@ import SearchResults from "../SearchResults/SearchResults";
 //search for books depending on the button clicked
 function Search() {
     const [books, setBooks] = useState([]);
+    const resultsRef = useRef(null);
+
     const searchBooks = (genre) => {
     
         //api call to get book recommendations
@@ -15,6 +17,8 @@ function Search() {
         axios.get(apiurl)
             .then(response => {
                 setBooks(response.data.books);
+                // Scroll to results after state update
+                    resultsRef.current.scrollIntoView({ behavior: 'smooth' });
             })
             
     }
@@ -28,13 +32,17 @@ function Search() {
     //for every genre in the array a button is created
     return (
         <div>
-            <h1 className="text-right">What are you in the mood for?</h1>
-            {genres.map((genre) => (
-                <button className="btn btn-outline-dark m-1" key={genre} onClick={() => searchBooks(genre)} >
-                {formatGenre(genre)}
-                </button>
-            ))}
-            {books.length === 0 ? <div>No books have been fetched!</div> :  <SearchResults books={books} />} {/* Pass the books state as a prop to SearchResults */}
+            <p className="h1" style={{ textAlign: 'center'}}>What are you in the mood for?</p>
+            <div className="container-fluid m-5">
+                <div className="row">
+                    {genres.map((genre) => (
+                        <button className="btn btn-outline-dark m-1 col" style={{ whiteSpace: 'nowrap'}} key={genre} onClick={() => searchBooks(genre)} >
+                        {formatGenre(genre)}
+                        </button>
+                    ))}
+                </div>
+            </div>
+            <SearchResults resultsRef={resultsRef} books={books} /> {/* Pass the books state as a prop to SearchResults */}
         </div>
     )
 }
