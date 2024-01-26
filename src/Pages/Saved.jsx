@@ -12,11 +12,11 @@ function Saved() {
   // const savedBooks = JSON.parse(localStorage.getItem('books')) || [];
   // console.log(savedBooks)
   return (
-    <div className='saved-books-conteiner container-fluid'>
-      <h1>Your saved books</h1>
-      <div className="conteiner-fluid d-md-flex justify-content-center">
+    <div className='saved-books-conteiner container-fluid w-100 me-5 me-md-0'>
+      <h1 className="justify-content-center text-center">Your saved books</h1>
+      <div className="conteiner-fluid me-5 me-md-0 d-md-flex w-100">
        {savedBooks.map(book=> <SavedCard key={book.id} book = {book} />) }
-    </div>
+      </div>
   </div>
  )
 }

@@ -7,8 +7,9 @@
   text-align: center;
 }
 
-.pages {
-  width: 100%;
+.page {
+  width: 80%;
+  margin: 30px;
 }
 
 .logo {
