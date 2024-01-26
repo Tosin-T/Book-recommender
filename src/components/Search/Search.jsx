@@ -18,9 +18,7 @@ function Search() {
             .then(response => {
                 setBooks(response.data.books);
                 // Scroll to results after state update
-                if (resultsRef.current) {
                     resultsRef.current.scrollIntoView({ behavior: 'smooth' });
-                }
             })
             
     }

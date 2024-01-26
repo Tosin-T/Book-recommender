@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 
-function SearchResults({ books }) {
+function SearchResults({ books, resultsRef }) {
 
     function onSave(book) {
         const savedBooks = JSON.parse(localStorage.getItem('books')) || [];
