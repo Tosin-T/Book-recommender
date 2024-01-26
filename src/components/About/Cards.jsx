@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component representing individual feature cards
 const Cards = ({ icon, title, description }) => {
     return (
         <div className="about-card p-5 rounded-3 m-5" style={{ width: '20rem ' }}>
