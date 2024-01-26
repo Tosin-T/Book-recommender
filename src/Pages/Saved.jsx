@@ -12,11 +12,12 @@ function Saved() {
   }, []);
   
   return (
-    <div className='saved-books-conteiner container-fluid'>
-      <h1>Your saved books</h1>
-      <div className="conteiner-fluid d-md-flex justify-content-center">
+    <div className='saved-books-conteiner container-fluid w-100 h-100'>
+      <h1 className="text-center ps-2 mb-4">Your saved books</h1>
+      <div className="conteiner-fluid me-5 me-md-0 d-md-flex w-100 text-center">
        {savedBooks.map(book=> <SavedCard key={book.id} book = {book} />) }
-    </div>
+      </div>
+      <div className="whiteSpace"></div>
   </div>
  )
 }

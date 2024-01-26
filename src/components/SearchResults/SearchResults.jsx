@@ -26,7 +26,8 @@ function SearchResults({ books, resultsRef }) {
                         <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} >
                             <img src={book[0].image} alt="book cover" />
                             <div className="carousel-caption d-none d-md-block" style={{ background: '#0008'}}>
-                                <h5 style={{ fontSize: '0.9em'}}>{book[0].title}</h5>
+                                <h5 style={{ fontSize: '0.9em' }}>{book[0].title}</h5>
+                                 <button className='btn' style={{ background: '#75B9BE', zIndex: '0'}} onClick={() => onSave(book)}>Save</button>
                             </div>
                         </div>
                     ))}
