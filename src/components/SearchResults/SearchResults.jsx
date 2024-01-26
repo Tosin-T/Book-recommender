@@ -32,12 +32,12 @@ function SearchResults({ books, resultsRef }) {
                         </div>
                     ))}
                 </div>
-                <a className="carousel-control-prev" href="#bookCarousel" role="button" data-bs-slide="prev" style={{ background: '#75B9BE', zIndex: '0'}}>
+                <a className="carousel-control-prev" href="#bookCarousel" role="button" data-bs-slide="prev" style={{ background: '#75B9BE', zIndex: '0', color: 'black'}}>
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#bookCarousel" role="button" data-bs-slide="next" style={{ background: '#75B9BE', zIndex: '0'}}>
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <a className="carousel-control-next" href="#bookCarousel" role="button" data-bs-slide="next" style={{ background: '#75B9BE', zIndex: '0', color: 'black'}}>
+                    <span className="carousel-control-next-icon" aria-hidden="true" style={{ color: 'black'}}></span>
                     <span className="sr-only">Next</span>
                 </a>
             </div>
