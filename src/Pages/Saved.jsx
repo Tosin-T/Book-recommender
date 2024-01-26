@@ -17,6 +17,7 @@ function Saved() {
       <div className="conteiner-fluid me-5 me-md-0 d-md-flex w-100 text-center">
        {savedBooks.map(book=> <SavedCard key={book.id} book = {book} />) }
       </div>
+      <div className="whiteSpace"></div>
   </div>
  )
 }

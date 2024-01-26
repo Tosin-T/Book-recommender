@@ -16,8 +16,9 @@ function SavedCard(props) {
       <div className="card-body align-middle">
         <h5 className="card-title ms-3 h-50">{props.book.title}</h5>
         <p className="card-text"></p>
-        <button className="btn mt-2 ms-3" style={{ background: '#75B9BE' }} onClick={deleteBook}>Remove</button>
+        <button className="btn mt-5 ms-3" style={{ background: '#75B9BE' }} onClick={deleteBook}>Remove</button>
       </div>
+      
     </div>
   );
 }
