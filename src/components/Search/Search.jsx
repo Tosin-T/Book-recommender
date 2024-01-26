@@ -40,7 +40,7 @@ function Search() {
                 {formatGenre(genre)}
                 </button>
             ))}
-            {books.length === 0 ? <div>No books have been fetched!</div> :  <SearchResults resultsRef={resultsRef} books={books} />} {/* Pass the books state as a prop to SearchResults */}
+            <SearchResults resultsRef={resultsRef} books={books} /> {/* Pass the books state as a prop to SearchResults */}
         </div>
     )
 }
