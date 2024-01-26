@@ -7,11 +7,11 @@ function Navbar() {
         <div className="container-fluid">
             <div className="row flex-nowrap">
                 <div className="col-auto bg-custom">
-                    <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-black min-vh-100">
+                    <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-black min-vh-100 ">
                         <Link to="/" className="d-flex align-items-center pb-3  me-md-auto text-black text-decoration-none">
                             <span className="fs-1 d-none d-sm-inline"><img src="src\assets\images\logo.png" className="logo-img" alt="Logo"></img></span>
                         </Link>
-                        <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="logo">
                             <li className="nav-item mb-3">
                                 <Link to="/" className="nav-link px-0">
                                     <i className="bi bi-house-fill" /> <Link className="ms-1 d-none d-sm-inline homepage" to="*">Home</Link>
