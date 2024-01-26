@@ -13,7 +13,7 @@ function SearchResults({ books }) {
       savedBooks.push(book[0]);
             localStorage.setItem('books', JSON.stringify(savedBooks));
             console.log(savedBooks)
-        }else {
+        } else {
             console.log("this book exists")
     }
   };

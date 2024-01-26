@@ -18,8 +18,8 @@ function Navbar() {
                                 </Link>
                             </li>
                             <li className="nav-item mb-3">
-                                <Link to="/about" className="nav-link px-0">
-                                    <i className="bi bi-question-circle-fill" /> <Link className="ms-1 d-none d-sm-inline about" to="/about">About</Link>
+                                <Link to="/aboutpage" className="nav-link px-0">
+                                    <i className="bi bi-question-circle-fill" /> <Link className="ms-1 d-none d-sm-inline about" to="/aboutpage">About</Link>
                                 </Link>
                             </li>
 

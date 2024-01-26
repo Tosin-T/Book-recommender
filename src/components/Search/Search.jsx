@@ -11,7 +11,7 @@ function Search() {
     const searchBooks = (genre) => {
     
         //api call to get book recommendations
-        const apikey = import.meta.env.VITE_APIKEY
+        const apikey = "13c48b7534974e2cb41485d0c4dfc9a5"
         const apiurl = "https://api.bigbookapi.com/search-books?api-key=" + apikey + "&query=" + genre;
         
         axios.get(apiurl)

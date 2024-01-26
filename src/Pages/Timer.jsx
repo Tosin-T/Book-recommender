@@ -1,12 +1,11 @@
 import React from "react";
-
-const Timer = () =>{
+import TimerFunction from "../components/Timer/Timer.jsx";
+const TimerPage = () => {
     return (
-        
-            <h1 className="webpages" >This is the timer page</h1>
-        
-        
+
+        <TimerFunction />
+
+
     )
 }
-
-export default Timer;
+export default TimerPage;
