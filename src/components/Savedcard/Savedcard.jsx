@@ -7,7 +7,7 @@ function SavedCard(props) {
     const savedBooks = JSON.parse(localStorage.getItem('books'));
     const updatedBooks = savedBooks.filter(savedBook => savedBook.id !== props.book.id);
     localStorage.setItem('books', JSON.stringify(updatedBooks));
-    window.location.reload(false);
+    window.location.reload(true);
   }
 
   return (
