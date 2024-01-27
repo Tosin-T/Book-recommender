@@ -11,7 +11,7 @@ function Navbar() {
                     <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-black min-vh-100 ">
                         {/* Logo linking to home */}
                         <Link to="/" className="d-flex align-items-center pb-3  me-md-auto text-black text-decoration-none">
-                            <span className="fs-1 d-none d-sm-inline"><img src="src\assets\images\logo.png" className="logo-img" alt="Logo"></img></span>
+                            <span className="fs-1 d-none d-sm-inline"><img src="src/assets/images/logo.png" className="logo-img" alt="Logo"></img></span>
                         </Link>
                          {/* Navigation links */}
                         <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="logo">
